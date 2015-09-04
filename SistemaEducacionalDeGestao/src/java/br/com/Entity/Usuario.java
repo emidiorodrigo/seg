@@ -22,7 +22,7 @@ public class Usuario implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private Long idUsuario;
     
     private String nome;
     private String email;
@@ -76,17 +76,17 @@ public class Usuario implements Serializable {
     
 
     public Long getId() {
-        return id;
+        return idUsuario;
     }
 
     public void setId(Long id) {
-        this.id = id;
+        this.idUsuario = id;
     }
 
     @Override
     public int hashCode() {
         int hash = 0;
-        hash += (id != null ? id.hashCode() : 0);
+        hash += (idUsuario != null ? idUsuario.hashCode() : 0);
         return hash;
     }
 
@@ -97,7 +97,7 @@ public class Usuario implements Serializable {
             return false;
         }
         Usuario other = (Usuario) object;
-        if ((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id))) {
+        if ((this.idUsuario == null && other.idUsuario != null) || (this.idUsuario != null && !this.idUsuario.equals(other.idUsuario))) {
             return false;
         }
         return true;
@@ -105,7 +105,7 @@ public class Usuario implements Serializable {
 
     @Override
     public String toString() {
-        return "Entidades.usuario[ id=" + id + " ]";
+        return "Entidades.usuario[ id=" + idUsuario + " ]";
     }
     
 }
