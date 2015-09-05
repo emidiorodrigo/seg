@@ -17,10 +17,10 @@
                 <legend>:: Cadastro de Usuário ::</legend>
                 <fieldset>
                 <h:panelGrid columns="2" >
-                    * Nome : <h:inputText id ="NomeTxt" styleClass="rotulos" size="40" value="#{usuarioBean.usuario.nome}"/>
+                    * Nome  : <h:inputText id ="NomeTxt" styleClass="rotulos" size="40" value="#{usuarioBean.usuario.nome}"/>
                     * Email : <h:inputText id="emailTxt" styleClass="rotulos" size="35" value="#{usuarioBean.usuario.email}"/>
                     * Usuário : <h:inputText id="UsuarioTxt" styleClass="rotulos" size="25" value="#{usuarioBean.usuario.usuario}"/>
-                    * Senha : <h:inputSecret id="SenhaSecret" styleClass="rotulos" size="25" value="#{usuarioBean.usuario.senha}"/>
+                    * Senha  : <h:inputSecret id="SenhaSecret" styleClass="rotulos" size="25" value="#{usuarioBean.usuario.senha}"/>
                     * Confirma Senha : <h:inputSecret id="confrimaSenha" styleClass="rotulos" size="25" value="#{usuarioBean.usuario.confrimaSenha}"/>
                 <h:inputHidden/>
                 <h:commandButton value="Cadastrar"  styleClass="botoes" action="#{usuarioBean.adicinarUsuario}"/>
